@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <!-- Tiêu đề -->
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🛒 Giỏ hàng"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="12dp" />
+
+    <!-- Tiêu đề cột -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content"
+            android:text="Sản phẩm"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.7"
+            android:layout_height="wrap_content"
+            android:text="SL"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:layout_height="wrap_content"
+            android:text="Thành tiền"
+            android:gravity="end"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Danh sách giỏ hàng -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingBottom="8dp" />
+
+    <!-- Tổng tiền -->
+    <TextView
+        android:id="@+id/txtTongTien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tổng tiền:"
+        android:textSize="16sp"
+        android:gravity="start"
+        android:layout_marginTop="8dp" />
+
+    <!-- VAT -->
+    <TextView
+        android:id="@+id/txtVAT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VAT (4.5%):"
+        android:textSize="16sp"
+        android:gravity="start"
+        android:layout_marginTop="4dp" />
+
+    <!-- Tổng thanh toán -->
+    <TextView
+        android:id="@+id/txtThanhToan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tổng tiền phải thanh toán:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:gravity="start"
+        android:layout_marginTop="8dp"
+        android:paddingBottom="12dp" />
+
+
+    <!-- Nút thanh toán -->
+    <Button
+        android:id="@+id/btnThanhToan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thanh toán"
+        android:background="#2196F3"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>

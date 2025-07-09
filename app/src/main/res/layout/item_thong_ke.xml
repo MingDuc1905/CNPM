@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Nhập khoảng thời gian -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="12dp">
+
+        <EditText
+            android:id="@+id/etStartDate"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="Từ ngày (yyyy-MM-dd)"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/etEndDate"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:hint="Đến ngày (yyyy-MM-dd)"
+            android:inputType="date" />
+
+        <Button
+            android:id="@+id/btnThongKe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Thống kê"
+            android:backgroundTint="#A36BF2"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- Hiển thị mặt hàng bán chạy -->
+    <TextView
+        android:id="@+id/tvMatHangBanChay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mặt hàng bán chạy nhất:"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Danh sách doanh thu -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvDoanhThu"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

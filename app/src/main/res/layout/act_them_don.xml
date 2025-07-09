@@ -1,0 +1,42 @@
+<!-- act_them_don.xml -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edtTenNguoiNhan"
+            android:hint="Tên người nhận" />
+
+        <EditText
+            android:id="@+id/edtDiaChi"
+            android:hint="Địa chỉ" />
+
+        <EditText
+            android:id="@+id/edtSDT"
+            android:hint="Số điện thoại"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/edtNgayGiao"
+            android:hint="Ngày giao (YYYY-MM-DD)"
+            android:inputType="date" />
+
+        <Spinner
+            android:id="@+id/spnTrangThai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/btnThemDon"
+            android:text="Thêm đơn"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>

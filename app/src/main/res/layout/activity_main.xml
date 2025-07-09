@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="16dp">
+
+    <Button
+        android:id="@+id/btnQuanLyDon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quản lý đơn hàng" />
+
+    <Button
+        android:id="@+id/btnShipper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shipper"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btnThongKe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thống kê"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>

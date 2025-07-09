@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvThongKe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"/>
+
+        <!-- Tiêu đề -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thống kê doanh thu theo ngày"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp" />
+
+        <!-- Danh sách doanh thu -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvDoanhThu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Tiêu đề thống kê mặt hàng -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thống kê mặt hàng bán chạy nhất"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Từ ngày / Đến ngày -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <EditText
+                android:id="@+id/etStartDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Từ ngày (yyyy-MM-dd)" />
+
+            <Space
+                android:layout_width="8dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/etEndDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Đến ngày (yyyy-MM-dd)" />
+        </LinearLayout>
+
+        <!-- Nút Thống kê -->
+        <Button
+            android:id="@+id/btnThongKe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thống kê"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Kết quả mặt hàng bán chạy -->
+        <TextView
+            android:id="@+id/tvMatHangBanChay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mặt hàng bán chạy: "
+            android:textSize="16sp"
+            android:textStyle="italic" />
+    </LinearLayout>
+</ScrollView>
